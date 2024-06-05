@@ -25,7 +25,6 @@ jobs:
         registry: ghcr.io
         username: ${{ secrets.TONYHOLBY }}
         password: ${{ secrets.CR_PAT }}
-        logout: true
 
     - name: Build and Push Docker image
       uses: docker/build-push-action@v3
